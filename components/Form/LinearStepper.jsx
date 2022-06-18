@@ -322,6 +322,7 @@ const ProjectOne = () => {
             type="file"
             variant="standard"
             fullWidth
+            inputProps={{accept:"image/png, image/gif, image/jpeg"}}
             onChange={(e) => {
               field.onChange(e.target.files[0]);
             }}
@@ -437,6 +438,7 @@ const ProjectTwo = () => {
             variant="standard"
             fullWidth
             margin="dense"
+            inputProps={{accept:"image/png, image/gif, image/jpeg"}}
             onChange={(e) => {
               field.onChange(e.target.files[0]);
             }}
@@ -553,6 +555,7 @@ const ProjectThree = () => {
             variant="standard"
             fullWidth
             margin="dense"
+            inputProps={{accept:"image/png, image/gif, image/jpeg"}}
             onChange={(e) => {
               field.onChange(e.target.files[0]);
             }}
@@ -810,9 +813,11 @@ const LinaerStepper = () => {
 
               <div className="mt-4 mb-4">
                 <Button
+                
                   className={classes.button}
                   disabled={activeStep === 0}
                   onClick={handleBack}
+                
                 >
                   back
                 </Button>
